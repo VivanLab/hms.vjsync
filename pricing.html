@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJ-Sync Pricing & Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#0D9488',
+                        accent: '#EF4444',
+                        gold: '#F59E0B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #f3f4f6; /* Soft gray for web background */
+            font-family: 'Poppins', sans-serif;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .premium-bg {
+            background-color: #0F172A;
+            background: radial-gradient(circle at 10% 20%, rgba(15,23,42,1) 0%, rgba(13,148,136,1) 100%);
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body { background: white; }
+            .no-print { display: none !important; }
+            .premium-bg {
+                background: radial-gradient(circle at 10% 20%, rgba(15,23,42,1) 0%, rgba(13,148,136,1) 100%) !important;
+                -webkit-print-color-adjust: exact !important;
+            }
+            .page-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+                border: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto my-8 bg-white shadow-2xl rounded-2xl overflow-hidden page-container border border-gray-200">
+        
+        <!-- Header Section -->
+        <div class="premium-bg text-white relative px-8 py-10 overflow-hidden">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 shadow-lg">
+                        <i class="fa-solid fa-heart-pulse text-4xl text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl font-bold tracking-widest uppercase font-sans text-white leading-none mb-1">VJ-SYNC HMS</h1>
+                        <p class="text-xs text-teal-100 tracking-[0.3em] uppercase opacity-90">Pricing & Subscription Plans</p>
+                    </div>
+                </div>
+                <div class="text-right flex items-center gap-4">
+                    <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20want%20a%20demo%20of%20your%20HMS%20software." target="_blank" class="bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-lg backdrop-blur-sm border border-white/10 flex items-center gap-2 transition-colors cursor-pointer text-white no-underline">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
+                        <span class="text-sm font-semibold tracking-wide">8059882099</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPECIAL ALERT NOTE -->
+        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-indigo-600 p-5 mx-8 mt-8 rounded-r-xl shadow-sm flex items-start gap-4">
+            <div class="bg-indigo-100 text-indigo-600 p-2 rounded-full mt-0.5 flex-shrink-0">
+                <i class="fa-solid fa-circle-info text-xl w-5 h-5 flex items-center justify-center"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-indigo-900 text-lg">Important Notice for Bulk Plans</h3>
+                <p class="text-sm text-indigo-800 mt-1 leading-relaxed font-medium">
+                    Our <strong>₹2/Patient (Freedom Plan)</strong> is the best choice for new or growing clinics. However, if your hospital has a high patient footfall and you prefer <strong>Fixed Monthly Bulk Plans</strong> (with everything included), the list below is for you!
+                </p>
+                <p class="text-[12px] text-indigo-700 mt-2 leading-snug bg-indigo-100/50 px-2.5 py-1.5 rounded border border-indigo-100/80 inline-block">
+                    <span class="font-bold text-indigo-900">नोट:</span> हमारा ₹2/मरीज वाला 'Freedom Plan' नए क्लीनिक के लिए बेस्ट है। लेकिन अगर मरीजों की संख्या ज्यादा है और आप फिक्स मंथली (Bulk) प्लान चाहते हैं, तो कृपया नीचे दिए गए प्लान्स चुनें।
+                </p>
+            </div>
+        </div>
+
+        <div class="p-8">
+            
+            <!-- 1. MAIN SUBSCRIPTION PLANS -->
+            <div class="mb-14">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-secondary text-white w-8 h-8 rounded-lg flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">1. Main Subscription Plans (Base Plans)</h2>
+                </div>
+                
+                <!-- 4 COLUMNS LAYOUT FOR EASY COMPARISON -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                    
+                    <!-- Start-Up -->
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-200 text-center flex flex-col justify-between hover:shadow-lg transition-all hover:border-blue-200 h-full">
+                        <div>
+                            <h4 class="font-bold text-gray-700 uppercase text-sm tracking-wider">Start-Up</h4>
+                            <p class="text-xs text-gray-400 mt-1">Best for small clinics</p>
+                            
+                            <div class="flex flex-col gap-2 mt-5">
+                                <span class="text-xs text-gray-600 bg-gray-50 rounded-lg border border-gray-100 py-2 font-medium flex items-center justify-center gap-2"><i class="fa-solid fa-users text-blue-500"></i> Up to 800 Patients/mo</span>
+                                <span class="text-xs text-gray-600 bg-gray-50 rounded-lg border border-gray-100 py-2 font-medium flex items-center justify-center gap-2"><i class="fa-solid fa-image text-green-500"></i> 500 Free Images/mo</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 border-t border-gray-100 pt-5 relative">
+                            <span class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 text-[10px] text-red-400 line-through font-medium">₹499</span>
+                            <div class="text-3xl font-extrabold text-primary leading-tight">₹249<span class="text-xs font-normal text-gray-400">/mo</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Growth (Popular) -->
+                    <div class="bg-white p-5 rounded-2xl shadow-xl border-2 border-secondary text-center flex flex-col justify-between relative h-full transform lg:-translate-y-2">
+                        <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-secondary text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wide shadow-md">Most Popular</div>
+                        <div>
+                            <h4 class="font-bold text-secondary uppercase text-sm tracking-wider mt-1">Growth</h4>
+                            <p class="text-xs text-gray-400 mt-1">For mid-sized hospitals</p>
+                            
+                            <div class="flex flex-col gap-2 mt-5">
+                                <span class="text-xs text-teal-800 bg-teal-50 rounded-lg border border-teal-100 py-2 font-semibold flex items-center justify-center gap-2"><i class="fa-solid fa-users text-teal-600"></i> Up to 2,500 Patients/mo</span>
+                                <span class="text-xs text-teal-800 bg-teal-50 rounded-lg border border-teal-100 py-2 font-semibold flex items-center justify-center gap-2"><i class="fa-solid fa-image text-green-600"></i> 1,500 Free Images/mo</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 border-t border-teal-100 pt-5 relative">
+                            <span class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 text-[10px] text-red-400 line-through font-medium">₹1199</span>
+                            <div class="text-4xl font-extrabold text-secondary leading-tight">₹599<span class="text-xs font-normal text-gray-400">/mo</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Scale -->
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-200 text-center flex flex-col justify-between hover:shadow-lg transition-all hover:border-blue-200 h-full">
+                        <div>
+                            <h4 class="font-bold text-primary uppercase text-sm tracking-wider">Scale</h4>
+                            <p class="text-xs text-gray-400 mt-1">For growing enterprises</p>
+                            
+                            <div class="flex flex-col gap-2 mt-5">
+                                <span class="text-xs text-gray-600 bg-gray-50 rounded-lg border border-gray-100 py-2 font-medium flex items-center justify-center gap-2"><i class="fa-solid fa-infinity text-blue-500"></i> Unlimited Patients</span>
+                                <span class="text-xs text-gray-600 bg-gray-50 rounded-lg border border-gray-100 py-2 font-medium flex items-center justify-center gap-2"><i class="fa-solid fa-image text-green-500"></i> 5,000 Free Images/mo</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 border-t border-gray-100 pt-5 relative">
+                            <span class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 text-[10px] text-red-400 line-through font-medium">₹2999</span>
+                            <div class="text-3xl font-extrabold text-primary leading-tight">₹1499<span class="text-xs font-normal text-gray-400">/mo</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Plan -->
+                    <div class="bg-gray-900 p-5 rounded-2xl shadow-lg border border-gray-700 text-center flex flex-col justify-between hover:shadow-xl transition-all relative overflow-hidden h-full">
+                        <div class="absolute right-0 top-0 h-32 w-32 bg-gray-800 rounded-full blur-[40px] opacity-60 -mr-10 -mt-10"></div>
+                        <div class="relative z-10">
+                            <div class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3 border border-gray-600">
+                                <i class="fa-solid fa-building text-gold"></i>
+                            </div>
+                            <h4 class="font-bold text-white uppercase text-sm tracking-wider">Corporate</h4>
+                            <p class="text-xs text-gray-400 mt-1">Custom setup & needs</p>
+                            
+                            <div class="flex flex-col gap-2 mt-5">
+                                <span class="text-xs text-gray-300 bg-white/10 rounded-lg border border-white/10 py-2 font-medium flex items-center justify-center gap-2"><i class="fa-solid fa-infinity text-gold"></i> Unlimited Patients</span>
+                                <span class="text-xs text-gray-300 bg-white/10 rounded-lg border border-white/10 py-2 font-medium flex items-center justify-center gap-2"><i class="fa-solid fa-infinity text-gold"></i> Unlimited Images</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 border-t border-gray-700 pt-5 relative z-10">
+                            <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20want%20to%20inquire%20about%20the%20Corporate%20Plan%20for%20my%20hospital." target="_blank" class="w-full bg-gold hover:bg-yellow-500 text-black text-sm font-extrabold px-4 py-2.5 rounded-lg shadow-md uppercase tracking-wider transition-colors border border-yellow-400 inline-block no-underline">
+                                Contact Sales
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-10">
+
+            <!-- 2. CORE MODULES (Included) -->
+            <div class="mb-14">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-blue-600 text-white w-8 h-8 rounded-lg flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-primary">2. Core Modules <span class="text-sm font-medium text-gray-500 ml-2">(Included in all plans for FREE)</span></h2>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow-inner">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white p-4 rounded-xl shadow-sm flex items-start gap-3 border border-gray-100">
+                            <i class="fa-solid fa-user-doctor text-secondary mt-1 text-xl"></i>
+                            <div>
+                                <h5 class="font-bold text-sm text-gray-800">Clinical Suite</h5>
+                                <p class="text-xs text-gray-500 mt-1">OPD, IPD, OT, Discharge Summary, Nursing Station.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm flex items-start gap-3 border border-gray-100">
+                            <i class="fa-solid fa-file-invoice-dollar text-secondary mt-1 text-xl"></i>
+                            <div>
+                                <h5 class="font-bold text-sm text-gray-800">Smart Billing</h5>
+                                <p class="text-xs text-gray-500 mt-1">TPA/Insurance Billing, Daily Collection Reports.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm flex items-start gap-3 border border-gray-100">
+                            <i class="fa-solid fa-hospital-user text-secondary mt-1 text-xl"></i>
+                            <div>
+                                <h5 class="font-bold text-sm text-gray-800">Hospital Ops</h5>
+                                <p class="text-xs text-gray-500 mt-1">Front Desk, Bed Management, Attendance, Inventory.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm flex items-start gap-3 border border-gray-100">
+                            <i class="fa-solid fa-mobile-screen-button text-secondary mt-1 text-xl"></i>
+                            <div>
+                                <h5 class="font-bold text-sm text-gray-800">Patient Portal</h5>
+                                <p class="text-xs text-gray-500 mt-1">Patient App for Appointment Booking & History.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. COMBO MODULES (3 COLUMNS) -->
+            <div class="mb-14">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-rose-500 text-white w-8 h-8 rounded-lg flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">3. Combo Modules <span class="text-sm font-medium text-rose-600 bg-rose-50 px-2 py-1 rounded ml-2 border border-rose-200">High Value Packs</span></h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+                    <!-- Hosp. Lite -->
+                    <div class="bg-white border border-rose-200 rounded-xl p-6 text-center shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow h-full">
+                        <div>
+                            <h5 class="font-bold text-xl text-primary">Hosp. Lite</h5>
+                            <p class="text-xs text-gray-500 mt-1">Essential combination</p>
+                            <p class="text-sm text-rose-700 font-semibold mt-3 bg-rose-50 py-3 rounded-lg border border-rose-100 flex items-center justify-center"><i class="fa-solid fa-plus text-rose-400 mr-2"></i> IPD + Pathology</p>
+                        </div>
+                        <div class="mt-6 border-t border-gray-100 pt-5">
+                            <span class="text-sm text-red-400 line-through block mb-1">₹899</span>
+                            <span class="font-bold text-secondary text-4xl block">₹449</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Hosp. Pro -->
+                    <div class="bg-white border-2 border-rose-400 rounded-xl p-6 text-center shadow-lg flex flex-col justify-between relative transform lg:-translate-y-2 h-full">
+                        <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-rose-500 text-white text-[10px] px-4 py-1 rounded-full font-bold uppercase shadow-sm tracking-widest">Popular Choice</div>
+                        <div>
+                            <h5 class="font-bold text-xl text-primary mt-1">Hosp. Pro</h5>
+                            <p class="text-xs text-gray-500 mt-1">Advanced combination</p>
+                            <p class="text-sm text-rose-700 font-semibold mt-3 bg-rose-50 py-3 rounded-lg border border-rose-100 flex items-center justify-center flex-col"><i class="fa-solid fa-plus text-rose-400 mb-1"></i> IPD + Path + Pharmacy</p>
+                        </div>
+                        <div class="mt-6 border-t border-rose-100 pt-5">
+                            <span class="text-sm text-red-400 line-through block mb-1">₹1199</span>
+                            <span class="font-bold text-secondary text-5xl block">₹549</span>
+                        </div>
+                    </div>
+
+                    <!-- Hosp. Ultimate -->
+                    <div class="bg-white border border-rose-200 rounded-xl p-6 text-center shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow h-full">
+                        <div>
+                            <h5 class="font-bold text-xl text-primary">Hosp. Ultimate</h5>
+                            <p class="text-xs text-gray-500 mt-1">Complete system</p>
+                            <p class="text-sm text-yellow-700 font-bold mt-3 bg-yellow-50 py-3 rounded-lg border border-yellow-200 flex items-center justify-center"><i class="fa-solid fa-star text-gold mr-2"></i> ALL Features (100% Access)</p>
+                        </div>
+                        <div class="mt-6 border-t border-gray-100 pt-5">
+                            <span class="text-sm text-red-400 line-through block mb-1">₹1499</span>
+                            <span class="font-bold text-secondary text-4xl block">₹749</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. STANDALONE MODULES (4 COLUMNS) -->
+            <div class="mb-14">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">4. Standalone Modules <span class="text-sm font-medium text-indigo-600 bg-indigo-50 px-2 py-1 rounded ml-2 border border-indigo-200">A la carte</span></h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                    <!-- Clinic OPD -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:border-indigo-400 transition-colors flex flex-col justify-between h-full">
+                        <div>
+                            <div class="bg-indigo-50 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600"><i class="fa-solid fa-stethoscope text-2xl"></i></div>
+                            <h5 class="font-bold text-lg text-primary">Clinic OPD</h5>
+                            <p class="text-xs text-gray-500 mt-2 mb-4 bg-gray-50 p-2 rounded">Rx, Appointments, Dr. Dashboard, Billing, Patient Portal</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <span class="text-xs text-red-400 line-through block">₹499</span>
+                            <span class="font-bold text-secondary text-3xl block">₹249</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Pathology -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:border-indigo-400 transition-colors flex flex-col justify-between h-full">
+                        <div>
+                            <div class="bg-indigo-50 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600"><i class="fa-solid fa-microscope text-2xl"></i></div>
+                            <h5 class="font-bold text-lg text-primary">Pathology</h5>
+                            <p class="text-xs text-gray-500 mt-2 mb-4 bg-gray-50 p-2 rounded">Lab Reports, Path Dashboard, Report Create, Report Download</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <span class="text-xs text-red-400 line-through block">₹499</span>
+                            <span class="font-bold text-secondary text-3xl block">₹249</span>
+                        </div>
+                    </div>
+
+                    <!-- Radiology -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:border-indigo-400 transition-colors flex flex-col justify-between h-full">
+                        <div>
+                            <div class="bg-indigo-50 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600"><i class="fa-solid fa-x-ray text-2xl"></i></div>
+                            <h5 class="font-bold text-lg text-primary">Radiology</h5>
+                            <p class="text-xs text-gray-500 mt-2 mb-4 bg-gray-50 p-2 rounded">X-Ray/USG Reporting System, Report Create, Report Download</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <span class="text-xs text-red-400 line-through block">₹499</span>
+                            <span class="font-bold text-secondary text-3xl block">₹249</span>
+                        </div>
+                    </div>
+
+                    <!-- Pharmacy -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:border-indigo-400 transition-colors flex flex-col justify-between h-full">
+                        <div>
+                            <div class="bg-indigo-50 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600"><i class="fa-solid fa-pills text-2xl"></i></div>
+                            <h5 class="font-bold text-lg text-primary">Pharmacy</h5>
+                            <p class="text-xs text-gray-500 mt-2 mb-4 bg-gray-50 p-2 rounded">POS Billing, Expiry Alerts & Stock</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <span class="text-xs text-red-400 line-through block">₹499</span>
+                            <span class="font-bold text-secondary text-3xl block">₹249</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. IMAGE BOOSTER PACKS (4 COLUMNS) -->
+            <div class="mb-14">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-teal-600 text-white w-8 h-8 rounded-lg flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-images"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">5. Image Booster Packs <span class="text-sm font-medium text-teal-700 bg-teal-50 px-2 py-1 rounded ml-2 border border-teal-200">Flat Rate Options</span></h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                    
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between h-full">
+                        <h5 class="font-bold text-base text-gray-800 uppercase tracking-wide">Mini Pack</h5>
+                        <div class="my-5">
+                            <span class="text-sm bg-white border border-gray-200 px-4 py-2 rounded-lg text-gray-700 font-semibold shadow-sm block">👉 + 500 Images &bull; No expiry</span>
+                        </div>
+                        <div class="font-bold text-secondary text-3xl mt-auto border-t border-gray-200 pt-4">₹49</div>
+                    </div>
+                    
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between h-full">
+                        <h5 class="font-bold text-base text-gray-800 uppercase tracking-wide">Standard</h5>
+                        <div class="my-5">
+                            <span class="text-sm bg-white border border-gray-200 px-4 py-2 rounded-lg text-gray-700 font-semibold shadow-sm block">👉 + 1,500 Images &bull; No expiry</span>
+                        </div>
+                        <div class="font-bold text-secondary text-3xl mt-auto border-t border-gray-200 pt-4">₹99</div>
+                    </div>
+                    
+                    <div class="bg-teal-50 border-2 border-teal-400 rounded-xl p-6 text-center relative shadow-md transform lg:-translate-y-2 flex flex-col justify-between h-full">
+                        <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-teal-500 text-white text-[10px] px-4 py-1 rounded-full font-bold uppercase shadow-sm tracking-widest">Most Used</div>
+                        <h5 class="font-bold text-base text-teal-900 uppercase tracking-wide mt-2">Pro Pack</h5>
+                        <div class="my-5">
+                            <span class="text-sm bg-white border border-teal-200 px-4 py-2 rounded-lg text-teal-800 font-bold shadow-sm block">👉 + 2,500 Images &bull; No expiry</span>
+                        </div>
+                        <div class="font-bold text-secondary text-4xl mt-auto border-t border-teal-200 pt-4">₹149</div>
+                    </div>
+                    
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between h-full">
+                        <h5 class="font-bold text-base text-gray-800 uppercase tracking-wide">Jumbo</h5>
+                        <div class="my-5">
+                            <span class="text-sm bg-white border border-gray-200 px-4 py-2 rounded-lg text-gray-700 font-semibold shadow-sm block">👉 + 10,000 Images &bull; No expiry</span>
+                        </div>
+                        <div class="font-bold text-secondary text-3xl mt-auto border-t border-gray-200 pt-4">₹499</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- HOW PRICING WORKS (TOTAL PRICE EXPLANATION BOX MOVED TO BOTTOM) -->
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 shadow-sm mt-8">
+                <h4 class="font-bold text-blue-900 text-lg mb-3"><i class="fa-solid fa-calculator mr-2"></i>How pricing works / रेट कैसे कैलकुलेट करें?</h4>
+                <p class="text-[13.5px] text-blue-800 leading-relaxed mb-4 font-medium">
+                    <strong>Note:</strong> The Main Subscription Plans (Base Plans) above are just your base plans depending on your patient workload. You will choose ANY ONE of these for entry, and then you can add any of the modules listed above that you want to run in your clinic or hospital. <br>
+                    <span class="font-bold bg-white border border-blue-200 px-4 py-2 rounded-lg inline-block mt-3 shadow-sm text-blue-900 text-[15px]">Example: Total Price = Main Plan + Any Module (you can add one or more modules)</span>
+                </p>
+                <p class="text-[12.5px] text-blue-800 border-t border-blue-200/60 pt-4 leading-snug font-medium">
+                    <span class="font-bold text-blue-900">नोट:</span> ऊपर वाले Main Subscription Plans (Base Plans) सिर्फ आपके वर्कलोड (मरीज़ लिमिट) के लिए बेस प्लान हैं। इनमें से कोई भी एक आप एंट्री के लिए चुनेंगे और फिर ऊपर दिए गए मॉड्यूल्स में से जो भी आपको अपने क्लीनिक या अस्पताल में रन करने हैं, आप उन्हें साथ में जोड़ सकते हैं।<br>
+                    <span class="font-bold text-blue-900 mt-2 bg-blue-100/50 px-3 py-1.5 rounded inline-block border border-blue-200/80">उदाहरण: कुल खर्च = मेन प्लान + कोई भी मॉड्यूल (एक या एक से ज्यादा मॉड्यूल्स भी ऐड कर सकते हैं)</span>
+                </p>
+            </div>
+            
+        </div>
+
+        <!-- Footer Section -->
+        <div class="bg-gray-900 text-white px-8 py-8 relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-6 border-t border-gray-800">
+             <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-bl-full"></div>
+             
+             <div class="relative z-10 text-center md:text-left">
+                 <h3 class="font-bold text-xl tracking-wider uppercase mb-1">VJ-Sync HMS</h3>
+                 <p class="text-[11px] text-gray-300 font-medium">By VJ-Sync Software Company</p>
+                 <p class="text-[10px] text-teal-400 mt-1.5 font-bold tracking-widest uppercase"><i class="fa-solid fa-shield-halved mr-1"></i> Trusted by 100+ Hospitals</p>
+             </div>
+             
+             <div class="flex flex-col sm:flex-row items-center gap-4 relative z-10">
+                 <div class="flex items-center gap-2 bg-white/10 px-4 py-3 rounded-lg border border-white/10 hover:bg-white/20 transition-colors">
+                     <i class="fa-solid fa-envelope text-secondary text-sm"></i>
+                     <span class="text-sm">vjsync.soft@gmail.com</span>
+                 </div>
+                 <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20visited%20your%20pricing%20page.%20I%20want%20to%20discuss%20the%20plans%20and%20modules." target="_blank" class="flex items-center gap-2 bg-green-600 hover:bg-green-500 px-5 py-3 rounded-lg border border-green-500 transition-colors cursor-pointer text-white no-underline shadow-lg">
+                     <i class="fa-brands fa-whatsapp text-white text-lg"></i>
+                     <span class="text-sm font-bold">Chat on WhatsApp</span>
+                 </a>
+             </div>
+             
+             <!-- Auto WhatsApp QR Code -->
+             <div class="flex items-center gap-3 relative z-10 bg-black/30 p-2 rounded-xl border border-gray-700">
+                 <div class="text-right">
+                     <p class="text-[10px] text-gray-300 font-bold uppercase tracking-wider mb-0.5">Scan to WhatsApp</p>
+                 </div>
+                 <img src="https://quickchart.io/qr?text=https%3A%2F%2Fwa.me%2F918059882099%3Ftext%3DHello%2520VJ-Sync%2520Team%252C%2520I%2520scanned%2520the%2520QR.%2520Please%2520share%2520details%2520about%2520HMS.&size=100" class="w-16 h-16 border border-gray-600 rounded p-1 bg-white" alt="WhatsApp QR">
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>
