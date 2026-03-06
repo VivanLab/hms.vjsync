@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thank you — VJ-Sync HMS</title>
+  <meta name="description" content="Thank you — VJ-Sync HMS. We'll contact you shortly for the demo." />
+
+  <!-- Tailwind CDN for quick styling (UI English, comments हिन्दी) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- NEW: Meta Pixel (head में रखा हुआ) -->
+  <!-- हिन्दी टिप्पणी: Pixel ID बदलना हो तो नीचे 1468609891320717 को बदल देना -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1468609891320717'); // Pixel ID — जरूरत हो तो बदल दें
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1468609891320717&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel -->
+
+  <style>
+    /* छोटा, clean thankyou style */
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #f8fafc; }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6 bg-slate-50">
+
+  <main class="max-w-3xl w-full bg-white rounded-2xl shadow-xl p-8 text-center">
+    <!-- logo block (same visual as other pages) -->
+    <div class="flex items-center justify-center mb-4">
+      <div class="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg p-3 shadow-md">
+        <!-- UI icon English, comment हिन्दी -->
+        <!-- हिन्दी: यह लोगो placeholder है — असली SVG/PNG डालना चाहो तो यहाँ बदल दो -->
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg>
+      </div>
+    </div>
+
+    <h1 class="text-2xl font-extrabold mb-2 text-slate-900">Thank you — Demo Request Received</h1>
+    <p class="text-slate-600 mb-6">हमने आपकी request receive कर ली है। आपकी टीम से 1 business day के अंदर संपर्क किया जाएगा।</p>
+
+    <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6">
+      <!-- Back to Pricing -->
+      <a href="/pricing.html" class="px-6 py-3 rounded-lg bg-slate-800 text-white font-semibold hover:bg-slate-900 transition" rel="noopener noreferrer"
+         onclick="try{if(window.fbq) fbq('track','Contact',{content_name:'Back to Pricing'});}catch(e){}">
+        Back to Pricing
+      </a>
+
+      <!-- WhatsApp CTA -->
+      <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20just%20completed%20the%20demo%20request." target="_blank" rel="noopener noreferrer"
+         class="px-6 py-3 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 transition inline-flex items-center gap-3"
+         onclick="try{ if(window.fbq) fbq('track','Contact',{content_name:'Thankyou WA Click'}); }catch(e){}">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+        Open WhatsApp
+      </a>
+    </div>
+
+    <!-- QR for mobile users -->
+    <div class="flex items-center justify-center gap-4">
+      <div class="text-left">
+        <p class="text-xs text-slate-500 mb-1 font-medium uppercase">Scan to WhatsApp</p>
+        <p class="text-[13px] text-slate-600">Quick message karein — हम contact कर लेंगे।</p>
+      </div>
+      <img src="https://quickchart.io/qr?text=https%3A%2F%2Fwa.me%2F918059882099%3Ftext%3DHello%2520VJ-Sync%2520Team%252C%2520I%2520completed%2520the%2520demo%2520request.&size=120" alt="WhatsApp QR" class="w-28 h-28 rounded-lg border p-1 bg-white shadow-sm" />
+    </div>
+
+    <p class="text-xs text-slate-400 mt-6">If you need urgent support, WhatsApp us or call 8059882099.</p>
+  </main>
+
+  <!-- Pixel CompleteRegistration: fires on page load -->
+  <script>
+    // हिन्दी टिप्पणी: यह event सुनिश्चित करता है कि Ads manager में 'CompleteRegistration' मिले
+    (function(){
+      try {
+        if(window.fbq) {
+          window.fbq('track', 'CompleteRegistration', { content_name: 'Demo Request Thankyou' });
+        } else {
+          // अगर fbq अभी भी load हो रहा है तो load होने पर भेज दें
+          window.addEventListener('load', function(){
+            if(window.fbq) {
+              window.fbq('track', 'CompleteRegistration', { content_name: 'Demo Request Thankyou' });
+            }
+          });
+        }
+      } catch(err) {
+        console.warn('fbq complete registration error', err);
+      }
+    })();
+  </script>
+
+</body>
+</html>
