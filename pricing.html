@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- NEW: Meta Pixel Code placed inside <head> (Pixel ID और PageView) -->
+    <!-- हिन्दी टिप्पणी: यह Meta Pixel snippet हर पेज पर होना चाहिए — इसे हटाना मत -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1468609891320717'); // Pixel ID — जरूरत हो तो बदल दो
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1468609891320717&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- NEW: Track that user viewed pricing (useful for optimizer) -->
+    <script>
+      try {
+        if (window.fbq) {
+          window.fbq('track', 'ViewContent', { content_name: 'Pricing Page' });
+        } else {
+          window.addEventListener('load', function() {
+            if (window.fbq) window.fbq('track', 'ViewContent', { content_name: 'Pricing Page' });
+          });
+        }
+      } catch(e) { console.warn('fbq viewcontent error', e); }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VJ-Sync Pricing & Plans</title>
@@ -70,6 +103,7 @@
             
             <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-4">
+                    <!-- logo block (अटैक नहीं की गई) -->
                     <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 shadow-lg">
                         <i class="fa-solid fa-heart-pulse text-4xl text-white"></i>
                     </div>
@@ -79,10 +113,17 @@
                     </div>
                 </div>
                 <div class="text-right flex items-center gap-4">
-                    <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20want%20a%20demo%20of%20your%20HMS%20software." target="_blank" class="bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-lg backdrop-blur-sm border border-white/10 flex items-center gap-2 transition-colors cursor-pointer text-white no-underline">
+                    <!-- footer/cta whatsapp link tracked -->
+                    <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20want%20a%20demo%20of%20your%20HMS%20software." target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-lg backdrop-blur-sm border border-white/10 flex items-center gap-2 transition-colors cursor-pointer text-white no-underline"
+                       onclick="if(window.fbq) { window.fbq('track','Contact'); }">
                         <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
                         <span class="text-sm font-semibold tracking-wide">8059882099</span>
                     </a>
+
+                    <!-- NEW: Request Demo button opens modal -->
+                    <button id="openDemoBtn" class="ml-2 bg-white text-primary px-4 py-2 rounded-lg font-semibold shadow-sm hover:shadow-md transition" aria-haspopup="dialog">
+                      Request Demo
+                    </button>
                 </div>
             </div>
         </div>
@@ -185,7 +226,9 @@
                             </div>
                         </div>
                         <div class="mt-6 border-t border-gray-700 pt-5 relative z-10">
-                            <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20want%20to%20inquire%20about%20the%20Corporate%20Plan%20for%20my%20hospital." target="_blank" class="w-full bg-gold hover:bg-yellow-500 text-black text-sm font-extrabold px-4 py-2.5 rounded-lg shadow-md uppercase tracking-wider transition-colors border border-yellow-400 inline-block no-underline">
+                            <!-- NEW: Contact Sales tracked as Lead (high-value conversion) + security rel -->
+                            <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20want%20to%20inquire%20about%20the%20Corporate%20Plan%20for%20my%20hospital." target="_blank" rel="noopener noreferrer" class="w-full bg-gold hover:bg-yellow-500 text-black text-sm font-extrabold px-4 py-2.5 rounded-lg shadow-md uppercase tracking-wider transition-colors border border-yellow-400 inline-block no-underline"
+                               onclick="if(window.fbq) { window.fbq('track','Lead', { content_name:'Corporate Contact Sales' }); }">
                                 Contact Sales
                             </a>
                         </div>
@@ -434,13 +477,15 @@
                      <i class="fa-solid fa-envelope text-secondary text-sm"></i>
                      <span class="text-sm">vjsync.soft@gmail.com</span>
                  </div>
-                 <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20visited%20your%20pricing%20page.%20I%20want%20to%20discuss%20the%20plans%20and%20modules." target="_blank" class="flex items-center gap-2 bg-green-600 hover:bg-green-500 px-5 py-3 rounded-lg border border-green-500 transition-colors cursor-pointer text-white no-underline shadow-lg">
+                 <!-- NEW: footer WA link tracked as Contact + security rel -->
+                 <a href="https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20visited%20your%20pricing%20page.%20I%20want%20to%20discuss%20the%20plans%20and%20modules." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-green-600 hover:bg-green-500 px-5 py-3 rounded-lg border border-green-500 transition-colors cursor-pointer text-white no-underline shadow-lg"
+                    onclick="if(window.fbq) { window.fbq('track','Contact', { content_name:'Pricing Footer WA' }); }">
                      <i class="fa-brands fa-whatsapp text-white text-lg"></i>
                      <span class="text-sm font-bold">Chat on WhatsApp</span>
                  </a>
              </div>
              
-             <!-- Auto WhatsApp QR Code -->
+             <!-- Auto WhatsApp QR Code (logo/QR मौजूद है) -->
              <div class="flex items-center gap-3 relative z-10 bg-black/30 p-2 rounded-xl border border-gray-700">
                  <div class="text-right">
                      <p class="text-[10px] text-gray-300 font-bold uppercase tracking-wider mb-0.5">Scan to WhatsApp</p>
@@ -449,6 +494,100 @@
              </div>
         </div>
     </div>
+
+    <!-- NEW: Demo Request Modal (append-only, original content preserved) -->
+    <div id="demoModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 p-4">
+      <div class="bg-white rounded-2xl w-full max-w-md p-6 shadow-xl relative">
+        <button id="closeDemoBtn" class="absolute right-4 top-4 text-slate-500 hover:text-slate-800" aria-label="Close modal">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <h3 class="text-xl font-bold mb-2">Request a Free Demo</h3>
+        <p class="text-sm text-slate-600 mb-4">Fill quick details — हम 1 business day में contact करेंगे.</p>
+
+        <form id="demoForm" class="space-y-4">
+          <div>
+            <label class="text-xs font-medium text-slate-700">Full name</label>
+            <input required name="name" type="text" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Dr. Amit Kumar">
+          </div>
+          <div>
+            <label class="text-xs font-medium text-slate-700">Mobile (WhatsApp)</label>
+            <input required name="phone" type="tel" pattern="[0-9]{10}" maxlength="10" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="8059882099">
+          </div>
+          <div>
+            <label class="text-xs font-medium text-slate-700">Hospital / Clinic name</label>
+            <input name="clinic" type="text" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="City Clinic">
+          </div>
+          <div>
+            <label class="text-xs font-medium text-slate-700">Message (optional)</label>
+            <textarea name="message" rows="2" class="mt-1 w-full border rounded-lg px-3 py-2" placeholder="Short note (optional)"></textarea>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button type="submit" class="bg-primary text-white px-4 py-2 rounded-lg font-semibold shadow">Request Demo</button>
+            <button type="button" id="demoToWhatsApp" class="text-sm text-slate-600 underline">Open WhatsApp instead</button>
+          </div>
+        </form>
+
+        <p id="demoFormNote" class="text-xs text-slate-500 mt-3 hidden">Submitting... please wait</p>
+      </div>
+    </div>
+
+    <!-- NEW: JS behavior for modal + form + fbq tracking -->
+    <script>
+      (function(){
+        const openBtn = document.getElementById('openDemoBtn');
+        const modal = document.getElementById('demoModal');
+        const closeBtn = document.getElementById('closeDemoBtn');
+        const form = document.getElementById('demoForm');
+        const note = document.getElementById('demoFormNote');
+        const waBtn = document.getElementById('demoToWhatsApp');
+
+        if(openBtn) openBtn.addEventListener('click', () => { modal.classList.remove('hidden'); modal.classList.add('flex'); });
+        if(closeBtn) closeBtn.addEventListener('click', () => { modal.classList.remove('flex'); modal.classList.add('hidden'); });
+
+        // click outside to close
+        modal.addEventListener('click', (e) => {
+          if(e.target === modal) { modal.classList.remove('flex'); modal.classList.add('hidden'); }
+        });
+
+        // open whatsapp with prefilled message
+        if(waBtn) waBtn.addEventListener('click', () => {
+          const url = 'https://wa.me/918059882099?text=Hello%20VJ-Sync%20Team%2C%20I%20want%20a%20demo%20of%20your%20HMS%20software.';
+          window.open(url, '_blank', 'noopener');
+        });
+
+        // form submit: client-side only (no backend). Fire fbq Lead and redirect to thankyou.html
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          const formData = new FormData(form);
+          const data = {
+            name: formData.get('name') || '',
+            phone: formData.get('phone') || '',
+            clinic: formData.get('clinic') || '',
+            message: formData.get('message') || ''
+          };
+
+          // छोटा UX नोट (हिन्दी comment)
+          note.classList.remove('hidden');
+          note.textContent = 'Submitting...';
+
+          // Primary Pixel signal: Lead
+          try {
+            if(window.fbq) {
+              window.fbq('track', 'Lead', { content_name: 'Demo Form', phone: data.phone });
+            }
+          } catch(err) {
+            console.warn('fbq lead error', err);
+          }
+
+          // short delay ताकि pixel register कर सके, फिर redirect
+          setTimeout(function(){
+            window.location.href = '/thankyou.html';
+          }, 400);
+        });
+      })();
+    </script>
 
 </body>
 </html>
