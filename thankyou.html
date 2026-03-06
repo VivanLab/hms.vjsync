@@ -9,8 +9,9 @@
   <!-- Tailwind CDN for quick styling (UI English, comments हिन्दी) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- NEW: Meta Pixel (head में रखा हुआ) -->
+  <!-- Meta Pixel (head में रखा हुआ) -->
   <!-- हिन्दी टिप्पणी: Pixel ID बदलना हो तो नीचे 1468609891320717 को बदल देना -->
+  <!-- (NOTE) यह वही Pixel init है — index/pricing के साथ same ID रखें। -->
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -79,23 +80,24 @@
     <p class="text-xs text-slate-400 mt-6">If you need urgent support, WhatsApp us or call 8059882099.</p>
   </main>
 
-  <!-- Pixel CompleteRegistration: fires on page load -->
+  <!-- NEW: Primary conversion event: Lead (fires on page load) -->
+  <!-- हिन्दी टिप्पणी: हमने यहाँ 'CompleteRegistration' की बजाय 'Lead' लगाया है — इससे Meta ads सही तरीके से optimize करेगा -->
   <script>
-    // हिन्दी टिप्पणी: यह event सुनिश्चित करता है कि Ads manager में 'CompleteRegistration' मिले
     (function(){
       try {
+        // NEW: Fire Lead event immediately if fbq available
         if(window.fbq) {
-          window.fbq('track', 'CompleteRegistration', { content_name: 'Demo Request Thankyou' });
+          window.fbq('track', 'Lead', { content_name: 'Demo Request Thankyou' }); // NEW
         } else {
-          // अगर fbq अभी भी load हो रहा है तो load होने पर भेज दें
+          // NEW: अगर fbq अभी load हो रहा है तो load पर भेज दो
           window.addEventListener('load', function(){
             if(window.fbq) {
-              window.fbq('track', 'CompleteRegistration', { content_name: 'Demo Request Thankyou' });
+              window.fbq('track', 'Lead', { content_name: 'Demo Request Thankyou' }); // NEW
             }
-          });
+          }, { once: true });
         }
       } catch(err) {
-        console.warn('fbq complete registration error', err);
+        console.warn('fbq lead track error', err);
       }
     })();
   </script>
